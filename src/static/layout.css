@@ -1,0 +1,355 @@
+html, body{
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  color: #333;
+  margin: 1.5em 0 0.5em;
+  line-height: 1.6em;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.3em; }
+
+strong { font-weight: 600; }
+
+img{
+  display: block;
+  width: 100%;
+}
+@media only screen and (orientation: landscape){
+  .portrait-orientation-only {
+    display: none !important;
+  }
+  .landscape-orientation-only {
+    display: block !important;
+  }
+}
+@media only screen and (orientation: portrait){
+  .portrait-orientation-only {
+    display: block !important;
+  }
+  .landscape-orientation-only {
+    display: none !important;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.box {
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-flow:row wrap;
+  flex-flow:row wrap;
+}
+.flex-container::after{
+  content: "";
+  clear: both;
+}
+
+/*Align*/
+.flex-container.row-reverse{
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.flex-container.column{
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.flex-container.column-reverse{
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.flex-container.h-align-right{
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.flex-container.h-align-center{
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.flex-container.h-align-space{
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.flex-container.h-align-space-around{
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.flex-container.v-align-stretch{
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+.flex-container.v-align-bottom{
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.flex-container.v-align-middle{
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.hidden-s-and-down{
+  display: none;
+}
+.hidden-m-and-down{
+  display: none;
+}
+.hidden-l-and-down{
+  display: none;
+}
+
+.visible-s-and-down{
+  display: inherit;
+}
+.visible-m-and-down{
+  display: inherit;
+}
+.visible-l-and-down{
+  display: inherit;
+}
+
+.xs-1 {width: 8.33%;}
+.xs-2 {width: 16.66%;}
+.xs-3 {width: 25%;}
+.xs-4 {width: 33.33%;}
+.xs-5 {width: 41.66%;}
+.xs-6 {width: 50%;}
+.xs-7 {width: 58.33%;}
+.xs-8 {width: 66.66%;}
+.xs-9 {width: 75%;}
+.xs-10 {width: 83.33%;}
+.xs-11 {width: 91.66%;}
+.xs-12 {width: 100%;}
+
+.no-gutter{
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 320px) {
+
+  /* Small screen, non-retina */
+  html, body{
+    font-size: 14px;
+  }
+
+  .s-1 {width: 8.33%;}
+  .s-2 {width: 16.66%;}
+  .s-3 {width: 25%;}
+  .s-4 {width: 33.33%;}
+  .s-5 {width: 41.66%;}
+  .s-6 {width: 50%;}
+  .s-7 {width: 58.33%;}
+  .s-8 {width: 66.66%;}
+  .s-9 {width: 75%;}
+  .s-10 {width: 83.33%;}
+  .s-11 {width: 91.66%;}
+  .s-12 {width: 100%;}
+
+  .hidden-s-and-down{
+    display: none;
+  }
+  .hidden-m-and-down{
+    display: none;
+  }
+  .hidden-l-and-down{
+    display: none;
+  }
+
+  .visible-s-and-down{
+    display: inherit;
+  }
+  .visible-m-and-down{
+    display: inherit;
+  }
+  .visible-l-and-down{
+    display: inherit;
+  }
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+
+  /* Small screen, retina, stuff to override above media query */
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Medium screen, non-retina */
+
+  html, body{
+    font-size: 15px;
+  }
+
+  .m-1 {width: 8.33%;}
+  .m-2 {width: 16.66%;}
+  .m-3 {width: 25%;}
+  .m-4 {width: 33.33%;}
+  .m-5 {width: 41.66%;}
+  .m-6 {width: 50%;}
+  .m-7 {width: 58.33%;}
+  .m-8 {width: 66.66%;}
+  .m-9 {width: 75%;}
+  .m-10 {width: 83.33%;}
+  .m-11 {width: 91.66%;}
+  .m-12 {width: 100%;}
+
+  .hidden-s-and-down{
+    display: inherit;
+  }
+  .hidden-m-and-down{
+    display: none;
+  }
+  .hidden-l-and-down{
+    display: none;
+  }
+  
+  .visible-s-and-down{
+    display: none;
+  }
+  .visible-m-and-down{
+    display: inherit;
+  }
+  .visible-l-and-down{
+    display: inherit;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 768px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (                min-resolution: 192dpi) and (min-width: 768px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 768px) { 
+
+  /* Medium screen, retina, stuff to override above media query */
+  
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* Common screen, non-retina */
+
+  html, body{
+    font-size: 16px;
+  }
+
+  .l-1 {width: 8.33%;}
+  .l-2 {width: 16.66%;}
+  .l-3 {width: 25%;}
+  .l-4 {width: 33.33%;}
+  .l-5 {width: 41.66%;}
+  .l-6 {width: 50%;}
+  .l-7 {width: 58.33%;}
+  .l-8 {width: 66.66%;}
+  .l-9 {width: 75%;}
+  .l-10 {width: 83.33%;}
+  .l-11 {width: 91.66%;}
+  .l-12 {width: 100%;}
+
+  .hidden-s-and-down{
+    display: inherit;
+  }
+  .hidden-m-and-down{
+    display: inherit;
+  }
+  .hidden-l-and-down{
+    display: none;
+  }
+  
+  .visible-s-and-down{
+    display: none;
+  }
+  .visible-m-and-down{
+    display: none;
+  }
+  .visible-l-and-down{
+    display: inherit;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1024px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1024px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1024px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1024px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1024px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1024px) { 
+
+  /* Common screen, retina, stuff to override above media query */
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  /* Large screen, non-retina */
+  .xl-1 {width: 8.33%;}
+  .xl-2 {width: 16.66%;}
+  .xl-3 {width: 25%;}
+  .xl-4 {width: 33.33%;}
+  .xl-5 {width: 41.66%;}
+  .xl-6 {width: 50%;}
+  .xl-7 {width: 58.33%;}
+  .xl-8 {width: 66.66%;}
+  .xl-9 {width: 75%;}
+  .xl-10 {width: 83.33%;}
+  .xl-11 {width: 91.66%;}
+  .xl-12 {width: 100%;}
+
+  .hidden-s-and-down{
+    display: inherit;
+  }
+  .hidden-m-and-down{
+    display: inherit;
+  }
+  .hidden-l-and-down{
+    display: inherit;
+  }
+  
+  .visible-s-and-down{
+    display: none;
+  }
+  .visible-m-and-down{
+    display: none;
+  }
+  .visible-l-and-down{
+    display: none;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+
+  /* Large screen, retina, stuff to override above media query */
+  
+}

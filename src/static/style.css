@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&subset=latin-ext');
+@import 'normalize.css';
+@import 'layout.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Noto Serif', serif;
+}
+
+header {
+  background: #f9f9f9;
+}
