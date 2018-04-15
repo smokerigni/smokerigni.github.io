@@ -6,7 +6,8 @@ import Interactive from 'react-interactive'
 const breadCrumbTitles = {
   '': '@smokerigni',
   'contact': 'Contact',
-  'about': 'About'
+  'about': 'About',
+  'cv': 'CV'
 }
 
 function BreadcrumbsItem ({ match }) {

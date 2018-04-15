@@ -2,14 +2,39 @@
 @import 'normalize.css';
 @import 'layout.css';
 
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
-html, body {
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: normal;
+  line-height: 1.6em;
   font-family: 'Noto Serif', serif;
 }
+body {
+  padding: 0 2em;
+}
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 header {
   background: #f9f9f9;
+}
+
+header nav ul li a.active div {
+  text-decoration: underline;
 }
