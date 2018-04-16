@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
 import Contact from './Contact'
-import CV from './cv'
+import Skills from './Skills'
 import About from './About'
 import PageNotFound from './PageNotFound'
 
@@ -64,7 +64,7 @@ export default function App () {
       <section className={'box no-gutter'}>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/cv' component={CV} />
+          <Route exact path='/skills' component={Skills} />
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
           <Route component={PageNotFound} />

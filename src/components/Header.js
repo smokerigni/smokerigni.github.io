@@ -96,8 +96,8 @@ class Header extends React.Component {
             </li>
             <li {...menuSeparatorCSS} />
             <li {...css(menuItemCSS, menuItemCircleCSS)} className={'flex-container h-align-center v-align-middle'}>
-              <NavLink to={'/cv'}>
-                <div {...menuItemCaptionCSS}>CV</div>
+              <NavLink to={'/skills'}>
+                <div {...menuItemCaptionCSS}>Skills</div>
               </NavLink>
             </li>
             <li {...menuSeparatorCSS} />
