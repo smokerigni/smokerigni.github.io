@@ -7,7 +7,11 @@ import CV from './cv'
 import About from './About'
 import PageNotFound from './PageNotFound'
 
+import ReactGA from 'react-ga'
+
 import { css } from 'glamor'
+
+ReactGA.initialize('UA-93555115-3')
 
 let mainCSS = css({
   background: '#ffffff'
@@ -22,9 +26,38 @@ let footerCSS = css({
   transformOrigin: 'left center'
 })
 
+class Analytics extends React.Component {
+  componentDidMount () {
+    this.sendPageChange(this.props.location.pathname, this.props.location.search)
+  }
+
+  componentDidUpdate (prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname ||
+      this.props.location.search !== prevProps.location.search) {
+      this.sendPageChange(this.props.location.pathname, this.props.location.search)
+    }
+  }
+
+  sendPageChange (pathname, search = '') {
+    /* Later search component? */
+    const page = pathname + search
+    ReactGA.set({page})
+    ReactGA.pageview(page)
+  }
+
+  render () {
+    return null
+  }
+}
+
+const AnalyticsTracker = () => {
+  return <Route component={Analytics} />
+}
+
 export default function App () {
   return (
     <main {...mainCSS} className={'box no-gutter flex-container'}>
+      <AnalyticsTracker />
       <Switch>
         <Route component={Header} />
       </Switch>
