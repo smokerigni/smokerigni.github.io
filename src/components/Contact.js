@@ -127,10 +127,10 @@ class Contact extends React.Component {
         <h1 {...css({ textAlign: 'center' })} className={'box'}>Contact</h1>
         <div className={'box'}>
           <code {...styles.code}>
-            Smokerigni ContactShell<br />
-            Copyright (C) without corporation. No rights reserved.<br />
+            Contact PowerShell<br />
+            Copyright (C) Smokerigni. All rights reserved.<br />
             <br />
-            PS Web:\smokerigni.github.io>get-contact -message="- Hi Ignác, <span ref={'type'} />
+            PS Web:\>get-in-touch -message="- Hi Ignác, <span ref={'type'} />
             { !this.state.reason ? this.pointer() : null}"
             { this.renderAnswer() }
           </code>
