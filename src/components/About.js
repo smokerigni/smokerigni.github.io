@@ -1,6 +1,8 @@
 import React from 'react'
 import { css } from 'glamor'
 
+import AsyncImage from './AsyncImage'
+
 const styles = {
   p: css({
     fontSize: '1.1em',
@@ -26,7 +28,18 @@ export default function About () {
         From 2015 to 2017 i was a midlevel PHP developer at a small business. At that workplace i've learned many new things about customer service, gained more experience in repairing, i made many websites and i've experienced in teamwork (and project management). There was 6 colleagues, 2 worked remote and the others in the office.
       </p>
       <div className={'box no-gutter flex-container v-align-middle'}>
-        <img className={'box no-gutter m-4'} src={'/src/static/project-management.jpg'} alt={'Photo by Startup Stock Photos from Pexels'} {...css({ marginBottom: '2.25em' })} />
+        <AsyncImage className={'box no-gutter m-4'}
+          source={'/src/static/project-management.jpg'}
+          alt={'Photo by Startup Stock Photos from Pexels'}
+          title={'Project management'}
+          placeholder={{
+            box: {
+              color: '#EDE1ED',
+              width: 358,
+              height: 288
+            }
+          }}
+        />
         <div className={'box m-8'}>
           <p {...styles.p}>
             When it's a joint work the communication is very important. In this small business we used an own project management tool (which contained task module, messaging module etc.). Now in my current job we use Slack, Asana and Github. If these were not, the teamwork and the business management will be an impossible thing.

@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import AsyncImage from './AsyncImage'
+
 import { css } from 'glamor'
 
 let imageCSS = css({
@@ -11,11 +13,15 @@ let imageCSS = css({
 
 let menuCSS = css({
   background: 'url(/src/static/background.jpg) no-repeat center center',
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
+  position: 'relative',
+  overflow: 'hidden'
 })
 
 let menuLayerCSS = css({
-  background: 'rgba(0,0,0,.72)'
+  background: 'rgba(0,0,0,.72)',
+  position: 'relative',
+  zIndex: '2'
 })
 
 let menuItemCSS = css({
@@ -87,6 +93,25 @@ class Header extends React.Component {
   render () {
     return (
       <header {...this.style} {...menuCSS} className={'header box no-gutter flex-container v-align-stretch'}>
+        <AsyncImage
+          className={'flex-container v-align-middle'}
+          style={{
+            position: 'absolute',
+            top: '-9999px',
+            right: '-9999px',
+            bottom: '-9999px',
+            left: '-9999px',
+            margin: 'auto',
+            minWidth: '100%',
+            maxWidth: '100%',
+            minHeight: '100%',
+            maxHeight: '100%'
+          }}
+          source={'/src/static/background.jpg'}
+          placeholder={{
+            image: '/src/static/background-200.jpeg'
+          }}
+        />
         <nav {...menuLayerCSS} className={'box flex-container v-align-stretch'}>
           <ul {...css({ listStyle: 'none' })} className={'box no-gutter flex-container h-align-center v-align-middle'}>
             <li {...menuItemCSS}>
