@@ -169,6 +169,9 @@ export default function Skills () {
             </div>
             <ul>
               <li>working with NodeJS</li>
+              <li>train myself in Electron</li>
+              <li>PHP MVC develop</li>
+              <li>IT consulting</li>
             </ul>
           </div>
         </div>
