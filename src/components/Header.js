@@ -12,8 +12,6 @@ let imageCSS = css({
 })
 
 let menuCSS = css({
-  background: 'url(/src/static/background.jpg) no-repeat center center',
-  backgroundSize: 'cover',
   position: 'relative',
   overflow: 'hidden'
 })

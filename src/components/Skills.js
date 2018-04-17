@@ -68,7 +68,7 @@ export default function Skills () {
         </div>
         <div className={'box m-8'}>
           <p>
-            Gain experience in design and UI/UX. I am web developer for nearly 6 years. During my work, there were always interesting tasks that increased my experience and I learned new technologies.
+            Gained experience in UI/UX design by working as a web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.
           </p>
         </div>
       </div>

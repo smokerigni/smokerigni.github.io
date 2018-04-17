@@ -28,7 +28,7 @@ export default function About () {
         From 2015 to 2017 i was a midlevel PHP developer at a small business. At that workplace i've learned many new things about customer service, gained more experience in repairing, i made many websites and i've experienced in teamwork (and project management). There was 6 colleagues, 2 worked remote and the others in the office.
       </p>
       <div className={'box no-gutter flex-container v-align-middle'}>
-        <AsyncImage className={'box no-gutter m-4'}
+        <AsyncImage style={{ marginBottom: '2.25em', position: 'relative', overflow: 'hidden' }} className={'box no-gutter m-4'}
           source={'/src/static/project-management.jpg'}
           alt={'Photo by Startup Stock Photos from Pexels'}
           title={'Project management'}

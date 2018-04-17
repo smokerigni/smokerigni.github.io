@@ -14,7 +14,7 @@ class AsyncImage extends React.Component {
   }
 
   render () {
-    const { source, placeholder } = this.props
+    const { className, style, source, placeholder, alt, title } = this.props
     let Layer = {
       position: 'absolute',
       top: '-10px',
@@ -27,7 +27,7 @@ class AsyncImage extends React.Component {
     }
 
     return (
-      <div className={this.props.className || ''} style={this.props.style || { position: 'relative', overflow: 'hidden' }}>
+      <div className={className || ''} style={style || { position: 'relative', overflow: 'hidden' }}>
         {
           placeholder && placeholder.image ? <img
             style={Layer}
@@ -47,8 +47,8 @@ class AsyncImage extends React.Component {
         <img
           style={{ display: 'block' }}
           src={source}
-          alt={this.props.alt || 'Image'}
-          title={this.props.title || ''}
+          alt={alt || 'Image'}
+          title={title || ''}
           onLoad={this._onLoad} />
       </div>
     )
