@@ -107,7 +107,7 @@ class Header extends React.Component {
             minHeight: '100%',
             maxHeight: '100%'
           }}
-          source={'/src/static/background.jpg'}
+          source={'/src/static/background.jpeg'}
           placeholder={{
             image: '/src/static/background-200.jpeg'
           }}
