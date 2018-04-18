@@ -149,6 +149,14 @@ class Contact extends React.Component {
             <button {...styles.button} onClick={e => this.setState({ reason: 'say hello' })}>...i have no question, just want to push this button.</button>
           </div>
         </div>) : this.backButton()}
+        <div id='fb-root' />
+        <script async type={'text/javascript'} src={'./src/static/fb-messenger.js'} />
+        <div class='fb-customerchat'
+          attribution='setup_tool'
+          page_id='178823402670769'
+          theme_color='#607D8B'
+          logged_in_greeting='Hi! Do you want to contact me?'
+          logged_out_greeting='Hi! Do you want to contact me?' />
       </div>
     )
   }
