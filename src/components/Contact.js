@@ -150,7 +150,7 @@ class Contact extends React.Component {
           </div>
         </div>) : this.backButton()}
         <div id='fb-root' />
-        <script async type={'text/javascript'} src={'./src/static/fb-messenger.js'} />
+        <script type={'text/javascript'} src={'./src/static/fb-messenger.js'} />
         <div class='fb-customerchat'
           attribution='setup_tool'
           page_id='178823402670769'
