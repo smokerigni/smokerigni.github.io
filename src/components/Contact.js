@@ -131,15 +131,15 @@ class Contact extends React.Component {
           { property: 'og:title', content: 'Contact - smokerigni.github.io' },
           { property: 'og:description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
           { property: 'og:url', content: 'https://smokerigni.github.io/contact' },
-          { property: 'description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
-          { property: 'robots', content: 'index,follow' },
-          { property: 'DC.coverage', content: 'Hungary' },
-          { property: 'DC.description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
-          { property: 'DC.format', content: 'text/html' },
-          { property: 'DC.identifier', content: 'https://smokerigni.github.io/contact' },
-          { property: 'DC.publisher', content: '@smokerigni' },
-          { property: 'DC.title', content: 'Contact - smokerigni.github.io' },
-          { property: 'DC.type', content: 'Text' }
+          { name: 'description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
+          { name: 'robots', content: 'index,follow' },
+          { name: 'DC.coverage', content: 'Hungary' },
+          { name: 'DC.description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
+          { name: 'DC.format', content: 'text/html' },
+          { name: 'DC.identifier', content: 'https://smokerigni.github.io/contact' },
+          { name: 'DC.publisher', content: '@smokerigni' },
+          { name: 'DC.title', content: 'Contact - smokerigni.github.io' },
+          { name: 'DC.type', content: 'Text' }
           ]}>
           <html lang='en' amp />
           <link rel='schema.dcterms' href='http://purl.org/dc/terms/' />

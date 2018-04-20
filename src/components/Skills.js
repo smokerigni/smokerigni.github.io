@@ -68,15 +68,15 @@ export default function Skills () {
           { property: 'og:title', content: 'Skills - smokerigni.github.io' },
           { property: 'og:description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
           { property: 'og:url', content: 'https://smokerigni.github.io/skills' },
-          { property: 'description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
-          { property: 'robots', content: 'index,follow' },
-          { property: 'DC.coverage', content: 'Hungary' },
-          { property: 'DC.description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
-          { property: 'DC.format', content: 'text/html' },
-          { property: 'DC.identifier', content: 'https://smokerigni.github.io/skills' },
-          { property: 'DC.publisher', content: '@smokerigni' },
-          { property: 'DC.title', content: 'Skills - smokerigni.github.io' },
-          { property: 'DC.type', content: 'Text' }
+          { name: 'description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
+          { name: 'robots', content: 'index,follow' },
+          { name: 'DC.coverage', content: 'Hungary' },
+          { name: 'DC.description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
+          { name: 'DC.format', content: 'text/html' },
+          { name: 'DC.identifier', content: 'https://smokerigni.github.io/skills' },
+          { name: 'DC.publisher', content: '@smokerigni' },
+          { name: 'DC.title', content: 'Skills - smokerigni.github.io' },
+          { name: 'DC.type', content: 'Text' }
         ]}>
         <html lang='en' amp />
         <link rel='schema.dcterms' href='http://purl.org/dc/terms/' />
