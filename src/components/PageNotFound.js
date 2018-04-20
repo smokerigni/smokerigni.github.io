@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Helmet as Head } from 'react-helmet'
 
 const propTypes = {
   location: PropTypes.object.isRequired
@@ -7,10 +8,13 @@ const propTypes = {
 
 export default function PageNotFound ({ location }) {
   return (
-    <p>
+    <div>
+      <Head title='404 - Page not found - smokerigni.github.io'>
+        <html lang='en' amp />
+      </Head>
       Page not found - the path, <code>{location.pathname}</code>,
-      did not match any React Router routes.
-    </p>
+      doesn't exist on this site.
+    </div>
   )
 }
 

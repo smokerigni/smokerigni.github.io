@@ -1,17 +1,25 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Header from './Header'
+import Analytics from './Analytics'
 import Home from './Home'
 import Contact from './Contact'
 import Skills from './Skills'
 import About from './About'
 import PageNotFound from './PageNotFound'
 
-import ReactGA from 'react-ga'
-
 import { css } from 'glamor'
 
-ReactGA.initialize('UA-93555115-3')
+import Cookies from 'universal-cookie'
+
+const cookies = new Cookies()
+
+let now = new Date()
+now.setTime(now.getTime() + 1 * 3600 * 24 * 30 * 1000)
+console.log(now)
+
+cookies.set('cookie', 'This is a cookie :)', { path: '/', expires: now })
+console.log(cookies.get('cookie'))
 
 let mainCSS = css({
   background: '#ffffff'
@@ -25,30 +33,6 @@ let footerCSS = css({
   transform: 'rotate(-90deg)',
   transformOrigin: 'left center'
 })
-
-class Analytics extends React.Component {
-  componentDidMount () {
-    this.sendPageChange(this.props.location.pathname, this.props.location.search)
-  }
-
-  componentDidUpdate (prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname ||
-      this.props.location.search !== prevProps.location.search) {
-      this.sendPageChange(this.props.location.pathname, this.props.location.search)
-    }
-  }
-
-  sendPageChange (pathname, search = '') {
-    /* Later search component? */
-    const page = pathname + search
-    ReactGA.set({page})
-    ReactGA.pageview(page)
-  }
-
-  render () {
-    return null
-  }
-}
 
 const AnalyticsTracker = () => {
   return <Route component={Analytics} />

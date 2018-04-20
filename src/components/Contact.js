@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from 'glamor'
+import { Helmet as Head } from 'react-helmet'
 
 const styles = {
   a: css({
@@ -124,6 +125,25 @@ class Contact extends React.Component {
 
     return (
       <div {...css({ padding: '0 10%' })} className={'box no-gutter flex-container'}>
+        <Head
+          title='Contact - smokerigni.github.io'
+          meta={[
+          { property: 'og:title', content: 'Contact - smokerigni.github.io' },
+          { property: 'og:description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
+          { property: 'og:url', content: 'https://smokerigni.github.io/contact' },
+          { property: 'description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
+          { property: 'robots', content: 'index,follow' },
+          { property: 'DC.coverage', content: 'Hungary' },
+          { property: 'DC.description', content: 'Nice to see you! You shall contact me at LinkedIn, Facebook or via email.' },
+          { property: 'DC.format', content: 'text/html' },
+          { property: 'DC.identifier', content: 'https://smokerigni.github.io/contact' },
+          { property: 'DC.publisher', content: '@smokerigni' },
+          { property: 'DC.title', content: 'Contact - smokerigni.github.io' },
+          { property: 'DC.type', content: 'Text' }
+          ]}>
+          <html lang='en' amp />
+          <link rel='schema.dcterms' href='http://purl.org/dc/terms/' />
+        </Head>
         <h1 {...css({ textAlign: 'center' })} className={'box'}>Contact</h1>
         <div className={'box'}>
           <code {...styles.code}>

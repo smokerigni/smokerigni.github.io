@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from 'glamor'
+import { Helmet as Head } from 'react-helmet'
 
 const styles = {
   h2: css({
@@ -61,6 +62,25 @@ const styles = {
 export default function Skills () {
   return (
     <div {...css({ padding: '0 10%' })} className={'box no-gutter flex-container'}>
+      <Head
+        title='Skills - smokerigni.github.io'
+        meta={[
+          { property: 'og:title', content: 'Skills - smokerigni.github.io' },
+          { property: 'og:description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
+          { property: 'og:url', content: 'https://smokerigni.github.io/skills' },
+          { property: 'description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
+          { property: 'robots', content: 'index,follow' },
+          { property: 'DC.coverage', content: 'Hungary' },
+          { property: 'DC.description', content: 'Advanced web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.' },
+          { property: 'DC.format', content: 'text/html' },
+          { property: 'DC.identifier', content: 'https://smokerigni.github.io/skills' },
+          { property: 'DC.publisher', content: '@smokerigni' },
+          { property: 'DC.title', content: 'Skills - smokerigni.github.io' },
+          { property: 'DC.type', content: 'Text' }
+        ]}>
+        <html lang='en' amp />
+        <link rel='schema.dcterms' href='http://purl.org/dc/terms/' />
+      </Head>
       <h1 {...css({ textAlign: 'center' })} className={'box'}>Skills</h1>
       <div className={'box no-gutter flex-container'}>
         <div className={'box m-4'}>
