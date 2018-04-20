@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smokerigni.github.io/src/static/sitemap.xml
