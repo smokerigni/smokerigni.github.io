@@ -43,13 +43,13 @@ export default function About () {
       <h1 {...css({ textAlign: 'center' })} className={'box'}>About</h1>
       <div {...styles.wrapper}>
         <p {...styles.p}>
-          Hi, my name is Ignác Török and I work as a web developer. I live in Nagykáta, near Budapest. I am an advanced web developer with 6 years of experience in structuring, developing and implementing interactive web services.
+          My name is Ignác Török and I work as a web developer. I live in Nagykáta, near Budapest. Having six years' experience in structuring, I have acquired proficient web developing skills, both at developing and at implementing interactive web services.
         </p>
         <p {...styles.p}>
-          At the beginning of my professional career, I made minor web works. As a result, a couple of relatively simple, custom-built webpages were created, as well as a few mini-games created in Unity. At this point I learned, and early work encouraged me.
+          At the beginning of my professional career, I designed minor web works. As a result, a couple of relatively simple, custom-built webpages were established as well as a few mini-games in Unity. This period was an impressive learning phase, for these early successes indeed had a great impact on me and encouraged me to continuously engage in this field.
         </p>
         <p {...styles.p}>
-          After my successful web programmer exam, I first participated in the development of an online journal engine. Then i started working in a high school as a system administrator.
+          After I had obtained a web programming degree, I first cooperated in the development of an online journal engine. Then I started working in a high school as system monitoring administrator.
         </p>
       </div>
       <div {...styles.wrapper} {...css({ background: '#f3f3f3' })} className={'box no-gutter flex-container v-align-middle'}>
@@ -64,14 +64,16 @@ export default function About () {
         <div className={'box m-6'}>
           <h2>Back to school</h2>
           <p {...styles.p}>
-            In the high school there was 136 clients and 3 servers - my job was to maintenance all the machines and network devices, both softwares and hardwares. There was a lot of work, and often I went to the office on weekends. Here I've gained experience in understanding larger systems. As programming is more interested me than repairing, I changed job after almost a year.
+            There were 136 clients and 3 servers in the high school – I was in charge of maintaining all the machines and network devices, both softwares and hardwares. I worked really hard and often went to the office on weekends, too. However, I have gained a handful of experience and a deeper apprehension in understanding larger systems.
+            <br />
+            For programming fits rather to my interests than repairing, I left the job after almost a year.
           </p>
         </div>
       </div>
       <div {...styles.wrapper}>
         <h2>Getting started</h2>
         <p {...styles.p}>
-          My next job was a web developer and system administrator company in Budaörs. The entire repertoire included web development, system administrator services, (e-)commerce, and IT consulting. I worked here as a midlevel PHP developer between 2015 and 2017. Here I've learned many new things about corporate governance, customer service operations, and frameworks. There i had 7 colleagues, 2 worked remotely. Previously I did all the projects on my own, but I had to work here in a team as a teammate.
+          Later on, I was employed by a company in Budaörs, which dealt with web development and system maintenance. Actually, the complete repertoire included web development, system administrator services, (e-)commerce, and IT consulting. I worked there as a midlevel PHP developer between 2015 and 2017. This environment also provided me specific experiences in terms of corporate governance, operating customer services and frameworks. Previously, I had been operating all by myself, but then I learnt a lot about teamwork and what it is like being the part of a seven-member team.
         </p>
       </div>
       <div {...styles.wrapper} {...css({ background: '#f3f3f3' })}>
@@ -81,7 +83,7 @@ export default function About () {
             source={'/src/static/maxwhere.jpg'}
             alt={'maxwhere victorian'}
             title={'MaxWhere software'}
-            caption={'MaxWhere\'s Victorian space, a good space for board meetings for example'}
+            caption={'MaxWhere\'s Victorian space, a good space for board meetings'}
             placeholder={{
               box: {
                 color: '#EDE1ED',
@@ -91,11 +93,11 @@ export default function About () {
             }} />
           <div className={'box m-6'}>
             <p {...styles.p}>
-              I first met with the MaxWhere team in 2016, they were looking for a user interface developer. They had interesting ideas and I liked their software, so in January 2017 I decided to be part of this.
+              I first met the MaxWhere team in 2016, when they were looking for a user interface developer. They shared their interesting ideas with me, and – since I liked their software – I decided to be the part of this project in January 2017.
             </p>
             <h3>MaxWhere, the future's software</h3>
             <p {...styles.p}>
-              This software is a potentially rich location of future's education and collaboration. The original idea was an innovative presentation tool that now knows much more. My job is to develop the software's user interface working closely with the UX team.
+              This software proved its potential serving as a rich location of future’s education and collaboration. The original idea was an innovative presentation tool, which now is suitable for a much more diverse usage. Working closely with the UX team, my task is to develop the user interface of the software.
             </p>
           </div>
         </div>

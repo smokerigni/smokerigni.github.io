@@ -6,18 +6,13 @@ const styles = {
   h2: css({
     fontSize: '1.15em',
     fontWeight: 700,
-    textTransform: 'uppercase',
-    textAlign: 'right',
-    color: '#607D8B',
     margin: 0,
-    lineHeight: 1,
-    paddingRight: '.5em',
-    borderRight: '.25em solid #607D8B'
+    lineHeight: 1
   }),
   h3: css({
     fontSize: '1em',
     fontWeight: 700,
-    color: '#607D8B',
+    color: '#323232',
     margin: 0
   }),
   workDesc: css({
@@ -30,31 +25,37 @@ const styles = {
   }),
   badge: css({
     display: 'inline-block',
-    padding: '0.25em 0.5em',
     margin: '0.35em',
-    border: '1px solid rgba(255,255,255,.5)',
-    fontWeight: 700,
     color: '#FFF',
-    fontSize: '.75em'
+    fontSize: '.85em',
+    background: '#f9f9f9',
+    borderRadius: '.4em',
+    padding: '.4em'
   }),
   badges: [
     css({
-      background: '#D84315'
+      color: '#D84315',
+      border: '1px solid #D84315'
     }),
     css({
-      background: '#3F51B5'
+      color: '#3F51B5',
+      border: '1px solid #3F51B5'
     }),
     css({
-      background: '#2196F3'
+      color: '#2196F3',
+      border: '1px solid #2196F3'
     }),
     css({
-      background: '#607D8B'
+      color: '#607D8B',
+      border: '1px solid #607D8B'
     }),
     css({
-      background: '#4CAF50'
+      color: '#4CAF50',
+      border: '1px solid #4CAF50'
     }),
     css({
-      background: '#009688'
+      color: '#009688',
+      border: '1px solid #009688'
     })
   ]
 }
@@ -83,52 +84,52 @@ export default function Skills () {
       </Head>
       <h1 {...css({ textAlign: 'center' })} className={'box'}>Skills</h1>
       <div className={'box no-gutter flex-container'}>
-        <div className={'box m-4'}>
+        <div className={'box l-2 m-3 s-12'}>
           <h2 {...styles.h2}>Objective</h2>
         </div>
-        <div className={'box m-8'}>
+        <div className={'box l-10 m-9 s-12'}>
           <p>
             Gained experience in UI/UX design by working as a web developer for nearly 6 years. I like facing challenges and provide neat solutions using the best tools available.
           </p>
         </div>
       </div>
       <div className={'box no-gutter flex-container'}>
-        <div className={'box m-4'}>
+        <div className={'box l-2 m-3 s-12'}>
           <h2 {...styles.h2}>Knowledge</h2>
         </div>
-        <div className={'box no-gutter m-8 flex-container'}>
+        <div className={'box no-gutter l-10 m-9 s-12 flex-container'}>
           <div className={'box m-6'}>
             <h3 {...styles.h3}>Technologies</h3>
             <p>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>PHP</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>NodeJS</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Javascript</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>JQuery</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>CSS3</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>HTML5</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>ReactJS</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>SASS</span>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>PHP</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>NodeJS</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Javascript</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>JQuery</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>CSS3</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>HTML5</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>ReactJS</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>SASS</code>
             </p>
           </div>
           <div className={'box m-6'}>
             <h3 {...styles.h3}>Softwares</h3>
             <p>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>NetBeans</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>VSCode</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Xampp</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Wamp</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Git</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Notepad++</span>
-              <span {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Sublime</span>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>NetBeans</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>VSCode</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Xampp</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Wamp</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Git</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Notepad++</code>
+              <code {...css(styles.badge, styles.badges[Math.floor(Math.random() * 6)])}>Sublime</code>
             </p>
           </div>
         </div>
       </div>
       <div className={'box no-gutter flex-container'}>
-        <div className={'box m-4'}>
+        <div className={'box l-2 m-3 s-12'}>
           <h2 {...styles.h2}>Work history</h2>
         </div>
-        <div className={'box no-gutter m-8'}>
+        <div className={'box no-gutter l-10 m-9 s-12'}>
           <div className={'box'}>
             <h3 {...styles.h3}>software UI developer (fullstack)</h3>
             <div {...styles.workDesc} className={'box no-gutter flex-container'}>
@@ -197,10 +198,10 @@ export default function Skills () {
         </div>
       </div>
       <div className={'box no-gutter flex-container'}>
-        <div className={'box m-4'}>
+        <div className={'box l-2 m-3 s-12'}>
           <h2 {...styles.h2}>References</h2>
         </div>
-        <div className={'box m-8'}>
+        <div className={'box l-10 m-9 s-12'}>
           <p>Available upon request</p>
         </div>
       </div>
