@@ -1,0 +1,36 @@
+.contact-code-block {
+  max-width: 70rem;
+
+  .code-styled {
+    background: #242424;
+    color: #DEDEDE;
+  }
+
+  .option-inline {
+    cursor: pointer;
+    color: #242424;
+    background: chartreuse;
+    margin-right: 1rem;
+
+    &::before {
+      content: '[';
+    }
+
+    &::after {
+      content: ']';
+    }
+  }
+}
+
+span.code-cursor {
+  animation: cursorblink .65s linear infinite;
+}
+
+@keyframes cursorblink {
+  0% {
+    color: inherit;
+  }
+  50% {
+    color: transparent;
+  }
+}
