@@ -2,14 +2,14 @@
   max-width: 70rem;
 
   .code-styled {
-    background: #242424;
-    color: #DEDEDE;
+    background: #353535;
+    color: #f9f9f9;
   }
 
   .option-inline {
     cursor: pointer;
-    color: #242424;
-    background: chartreuse;
+    color: #353535;
+    background: #f95959;
     margin-right: 1rem;
 
     &::before {
@@ -17,7 +17,8 @@
     }
 
     &::after {
-      content: ']';
+      content: ']\a';
+      white-space: pre;
     }
   }
 }
