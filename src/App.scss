@@ -4,7 +4,8 @@ body {
 
 header {
   min-height: 100vh;
-  background: #353535;
+  background: #111111;
+  padding: 6rem 0;
 
   color: #f9f9f9;
 }
@@ -26,4 +27,85 @@ p.sub-h1 {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+h2 {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 1.5em;
+    height: 0.5em;
+    background: #f95959;
+    margin-left: 0.25em;
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: url("triangle.svg#svgView(preserveAspectRatio(none))") center center no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+
+  .menu-toggle {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 3rem;
+
+    .menu-toggle-label-segment {
+      display: block;
+      transition: all .2s ease-in-out;
+    }
+
+    .bars {
+      display: inline-block;
+      width: .7rem;
+      height: .8rem;
+      margin: 0 0.1rem;
+
+      .bar {
+        width: 100%;
+        height: 0.2rem;
+        background: #222;
+
+        &:nth-of-type(3n+2) {
+          margin: 0.1rem 0;
+        }
+      }
+    }
+  }
+
+  ul {
+    transition: all .2s ease-in-out;
+    transform: scale(0.1);
+
+    li a {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f9f9f9;
+      margin: 1rem;
+    }
+  }
+
+  &.open {
+    height: 100vh;
+    background-color: #111111;
+
+    ul {
+      transform: scale(1);
+    }
+
+    .menu-toggle-label-segment {
+      transform: scaleX(0);
+      width: 0;
+    }
+  }
+
+  &.closed {
+    height: 3rem;
+  }
+
 }

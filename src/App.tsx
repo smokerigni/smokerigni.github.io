@@ -1,20 +1,50 @@
 import './App.scss'
-import React from "react"
+import React, { useState } from "react"
 import ContactCodeBlock from "./components/ContactCodeBlock/ContactCodeBlock"
 
 const App: React.FunctionComponent = () => {
+  const [ menu, setMenu ] = useState<boolean>(false)
+  const toggleMenu = () => {
+    setMenu(!menu)
+  }
+
   return (
     <React.Fragment>
+      <nav className={(menu ? "open" : "closed") + " d-flex justify-content-center flex-wrap align-items-center"}>
+        <div className="menu-toggle align-self-start d-flex align-items-center justify-content-center"
+             onClick={toggleMenu}>
+          <span className="menu-toggle-label-segment">m</span>
+          <span className="bars">
+            <div className="bar"/>
+            <div className="bar"/>
+            <div className="bar"/>
+          </span>
+          <span className="menu-toggle-label-segment">nu</span>
+        </div>
+        <ul className="align-self-baseline list-unstyled w-100">
+          <li>
+            <a href="#hello">Hello</a>
+          </li>
+          <li>
+            <a href="#hello">Skills</a>
+          </li>
+          <li>
+            <a href="#hello">About</a>
+          </li>
+          <li>
+            <a href="#hello">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <article className="content">
         <div className="container-fluid">
           <header className="row align-items-center justify-content-center">
-            <div className="col-4">
+            <div className="col-10 col-lg-4 col-md-8">
               <div className="d-flex flex-wrap">
                 <h1>
                   Hello. It's me.
                   <span>@smokerigni</span>
                 </h1>
-                <p className="sub-h1">Frontend developer</p>
                 <p>
                   My name is Ignác Török. Having eight years' experience
                   in structuring, I have acquired proficient web developing skills, both at developing and at
@@ -22,11 +52,10 @@ const App: React.FunctionComponent = () => {
                   interactive web services. My actual focus is the frontend with Reactjs.
                 </p>
               </div>
-
             </div>
           </header>
           <section className="row align-items-center justify-content-center">
-            <div className="col-12">
+            <div className="col-12 col-lg-6 col-md-8">
               <h2>Skills</h2>
               <h3>Objective</h3>
               <p>
@@ -42,7 +71,7 @@ const App: React.FunctionComponent = () => {
             </div>
           </section>
           <div className="row h-100 align-items-center justify-content-center">
-            <div className="col-12">
+            <div className="col-12 col-lg-6 col-md-8">
               <h2>About me - the long version</h2>
               <p>
                 My name is Ignác Török. Having eight years' experience
@@ -104,7 +133,7 @@ const App: React.FunctionComponent = () => {
             </div>
           </div>
           <div className="row h-100 align-items-center justify-content-center">
-            <div className="col-12">
+            <div className="col-12 col-lg-6 col-md-8">
               <ContactCodeBlock/>
             </div>
           </div>
