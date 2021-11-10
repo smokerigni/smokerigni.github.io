@@ -8,6 +8,14 @@ const App: React.FunctionComponent = () => {
     setMenu(!menu)
   }
 
+  const scrollToSection = (event: React.MouseEvent) => {
+    event.preventDefault()
+    const id = event.currentTarget.getAttribute('href')
+    const targetSection = id !== null ? document.querySelector(id) : null
+    if (targetSection !== null) targetSection.scrollIntoView({ behavior: 'smooth' })
+    toggleMenu()
+  }
+
   return (
     <React.Fragment>
       <nav className={(menu ? "open" : "closed") + " d-flex justify-content-center flex-wrap align-items-center"}>
@@ -23,22 +31,22 @@ const App: React.FunctionComponent = () => {
         </div>
         <ul className="align-self-baseline list-unstyled w-100">
           <li>
-            <a href="#hello">Hello</a>
+            <a onClick={scrollToSection} href="#hello">Hello</a>
           </li>
           <li>
-            <a href="#hello">Skills</a>
+            <a onClick={scrollToSection} href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#hello">About</a>
+            <a onClick={scrollToSection} href="#about">About</a>
           </li>
           <li>
-            <a href="#hello">Contact</a>
+            <a onClick={scrollToSection} href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
       <article className="content">
         <div className="container-fluid">
-          <header className="row align-items-center justify-content-center">
+          <header id="hello" className="row align-items-center justify-content-center">
             <div className="col-10 col-lg-4 col-md-8">
               <div className="d-flex flex-wrap">
                 <h1>
@@ -54,7 +62,7 @@ const App: React.FunctionComponent = () => {
               </div>
             </div>
           </header>
-          <section className="row align-items-center justify-content-center">
+          <section id="skills" className="row align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
               <h2>Skills</h2>
               <h3>Objective</h3>
@@ -70,7 +78,7 @@ const App: React.FunctionComponent = () => {
               WebStorm, Apache NetBeans, VSCode, Xampp, Git, Notepad++, Sublime
             </div>
           </section>
-          <div className="row h-100 align-items-center justify-content-center">
+          <section id="about" className="row h-100 align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
               <h2>About me - the long version</h2>
               <p>
@@ -131,12 +139,12 @@ const App: React.FunctionComponent = () => {
                 Open to work!
               </p>
             </div>
-          </div>
-          <div className="row h-100 align-items-center justify-content-center">
+          </section>
+          <section id="contact" className="row h-100 align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
               <ContactCodeBlock/>
             </div>
-          </div>
+          </section>
           <footer className="container-fluid">
             <p>Copyright 2021 @smokerigni</p>
           </footer>

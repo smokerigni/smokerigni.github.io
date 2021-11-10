@@ -2,6 +2,16 @@ body {
   font-size: 16px;
 }
 
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+article.content {
+  height: 100vh;
+  overflow: auto;
+}
+
 header {
   min-height: 100vh;
   background: #111111;
@@ -93,6 +103,10 @@ nav {
   &.open {
     height: 100vh;
     background-color: #111111;
+
+    ~ article {
+      overflow-y: hidden;
+    }
 
     ul {
       transform: scale(1);
