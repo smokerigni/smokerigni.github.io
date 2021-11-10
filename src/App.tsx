@@ -1,6 +1,7 @@
 import './App.scss'
 import React, { useState } from "react"
 import ContactCodeBlock from "./components/ContactCodeBlock/ContactCodeBlock"
+import Technologies from "./components/Technologies/Technologies";
 
 const App: React.FunctionComponent = () => {
   const [ menu, setMenu ] = useState<boolean>(false)
@@ -73,14 +74,17 @@ const App: React.FunctionComponent = () => {
               </p>
               <h3>Knowledge</h3>
               <h4>Technologies</h4>
-              Reactjs, PHP, NodeJS, Javascript, CSS3, SASS, HTML5,
+              <Technologies/>
               <h4>Software</h4>
               WebStorm, Apache NetBeans, VSCode, Xampp, Git, Notepad++, Sublime
             </div>
           </section>
           <section id="about" className="row h-100 align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
-              <h2>About me - the long version</h2>
+              <h2>About me</h2>
+              <div>
+                Switch: Chronology or Long version
+              </div>
               <p>
                 My name is Ignác Török. Having eight years' experience
                 in structuring, I have acquired proficient web developing skills, both at developing and at implementing
@@ -143,6 +147,8 @@ const App: React.FunctionComponent = () => {
           <section id="contact" className="row h-100 align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
               <ContactCodeBlock/>
+              +36317826113
+              smokerigni@gmail.com
             </div>
           </section>
           <footer className="container-fluid">
