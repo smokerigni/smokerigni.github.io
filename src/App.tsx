@@ -3,62 +3,24 @@ import React, { useState } from "react"
 import ContactCodeBlock from "./components/ContactCodeBlock/ContactCodeBlock"
 import Technologies from "./components/Technologies/Technologies";
 import Konami from "./components/Konami/Konami";
+import Navigation from "./components/Navigation/Navigation";
 
 const App: React.FunctionComponent = () => {
-  const [ menu, setMenu ] = useState<boolean>(false)
-  const toggleMenu = () => {
-    setMenu(!menu)
-  }
-
-  const scrollToSection = (event: React.MouseEvent) => {
-    event.preventDefault()
-    const id = event.currentTarget.getAttribute('href')
-    const targetSection = id !== null ? document.querySelector(id) : null
-    if (targetSection !== null) targetSection.scrollIntoView({ behavior: 'smooth' })
-    toggleMenu()
-  }
-
   return (
     <React.Fragment>
-      <nav className={(menu ? "open" : "closed") + " d-flex justify-content-center flex-wrap align-items-center"}>
-        <div className="menu-toggle align-self-start d-flex align-items-center justify-content-center"
-             onClick={toggleMenu}>
-          <span className="menu-toggle-label-segment">m</span>
-          <span className="bars">
-            <div className="bar"/>
-            <div className="bar"/>
-            <div className="bar"/>
-          </span>
-          <span className="menu-toggle-label-segment">nu</span>
-        </div>
-        <div className="close-layer position-absolute"
-             onClick={toggleMenu}/>
-        <ul className="position-relative align-self-baseline list-unstyled w-100">
-          <li>
-            <a onClick={scrollToSection} href="#hello">Hello</a>
-          </li>
-          <li>
-            <a onClick={scrollToSection} href="#skills">Skills</a>
-          </li>
-          <li>
-            <a onClick={scrollToSection} href="#about">About</a>
-          </li>
-          <li>
-            <a onClick={scrollToSection} href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <Navigation/>
       <article className="content">
         <div className="container-fluid">
-          <header id="hello" className="row align-items-center justify-content-center">
-            <div className="col-10 col-lg-4 col-md-8">
+          <header id="hello" className="row align-items-center justify-content-center position-relative">
+            <div className="image-layer position-absolute"/>
+            <div className="position-relative col-10 col-lg-4 col-md-8">
               <div className="d-flex flex-wrap">
-                <h1>
+                <h1 className="w-100">
                   Hello. It's me.
                   <span>@smokerigni</span>
                 </h1>
                 <div className="sub-h1">Frontend developer</div>
-                <p>
+                <p className="d-none">
                   My name is Ignác Török. Having eight years' experience
                   in structuring, I have acquired proficient web developing skills, both at developing and at
                   implementing
