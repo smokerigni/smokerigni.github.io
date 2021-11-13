@@ -1,6 +1,11 @@
 .contact-code-block {
   max-width: 70rem;
 
+  a {
+    color: #f4e53c;
+    font-weight: 700;
+  }
+
   .code-styled {
     background: #353535;
     color: #f9f9f9;
@@ -9,7 +14,9 @@
   .option-inline {
     cursor: pointer;
     color: #ffffff;
-    background: #f95959;
+    background: #f4e53c;
+    background: #a2be72;
+    background: #0b73ba;
     margin-right: 1rem;
 
     &::before {

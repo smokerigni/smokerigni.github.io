@@ -5,6 +5,7 @@ import ReactjsSVGSrc from './assets/react.svg'
 import NodejsSVGSrc from './assets/node.svg'
 import TypescriptSVGSrc from './assets/typescript.svg'
 import JavascriptSVGSrc from './assets/javascript.svg'
+import ElectronSVGSrc from './assets/electron.svg'
 
 import PhpSVGSrc from './assets/php.svg'
 import SassSVGSrc from './assets/sass.svg'
@@ -32,6 +33,7 @@ const Technologies: React.FunctionComponent = () => {
     { img: NodejsSVGSrc, label: 'NodeJS' },
     { img: TypescriptSVGSrc, label: 'Typescript' },
     { img: JavascriptSVGSrc, label: 'Javascript' },
+    { img: ElectronSVGSrc, label: 'Electron' },
     { img: SassSVGSrc, label: 'SASS' },
     { img: Css3SVGSrc, label: 'CSS3' },
     { img: Html5SVGSrc, label: 'HTML5' },
