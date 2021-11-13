@@ -1,0 +1,82 @@
+
+#about {
+  background: #f5f9fc;
+
+  .about-switch {
+    margin: 2rem 0;
+    padding: 0 2rem;
+
+    .tab {
+      position: relative;
+      height: 3rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-align: center;
+      background: #ffffff;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &::after {
+        content: '';
+        transition: all .2s ease-in-out;
+        transform: rotate(360deg);
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+
+      &.even::after {
+        top: 0;
+        left: 100%;
+        border-width: 3rem 1rem 0 0;
+        border-color: #fff transparent transparent transparent;
+      }
+
+      &.odd::after {
+        top: 0;
+        right: 100%;
+        border-width: 0 0 3rem 1rem;
+        border-color: transparent transparent #fff transparent;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        background: #f4e53c;
+        z-index: 3;
+
+        &.even::after {
+          border-color: #f4e53c transparent transparent transparent;
+        }
+
+        &.odd::after {
+          border-color: transparent transparent #f4e53c transparent;
+        }
+      }
+    }
+  }
+
+  .by-year {
+    padding: 1rem 2rem;
+
+    .yr {
+      color: #353535;
+      font-weight: 700;
+      font-size: 0.8rem;
+      width: 100%;
+      @media only screen and (min-width: 768px) {
+        width: 6rem;
+      }
+
+      ~ div {
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+          width: calc(100% - 6rem);
+        }
+      }
+    }
+  }
+}
