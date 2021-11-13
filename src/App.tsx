@@ -31,7 +31,9 @@ const App: React.FunctionComponent = () => {
           </span>
           <span className="menu-toggle-label-segment">nu</span>
         </div>
-        <ul className="align-self-baseline list-unstyled w-100">
+        <div className="close-layer position-absolute"
+             onClick={toggleMenu}/>
+        <ul className="position-relative align-self-baseline list-unstyled w-100">
           <li>
             <a onClick={scrollToSection} href="#hello">Hello</a>
           </li>
