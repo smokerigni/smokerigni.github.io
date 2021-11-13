@@ -65,6 +65,13 @@ const App: React.FunctionComponent = () => {
               </div>
             </div>
           </header>
+          <div id="konami-tooltip" className="text-center p-3">
+            <i className="bi bi-egg-fill"/>
+            <i className="bi bi-egg-fill"/>
+            <i className="bi bi-egg-fill"/>
+            Easter egg:
+            Konami code works on this site
+          </div>
           <section id="skills" className="row align-items-center justify-content-center">
             <div className="col-12 col-lg-6 col-md-8">
               <h2>Skills</h2>

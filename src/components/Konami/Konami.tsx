@@ -17,6 +17,8 @@ const Konami: React.FunctionComponent = () => {
   const [ codePosition, setCodePosition ] = useState<number>(0)
   const [ showEasterEgg, setShowEasterEgg ] = useState<boolean>(false)
 
+  const hideEasterEgg = () => setShowEasterEgg(false)
+
   const handleKeyDown = (event: KeyboardEvent) => {
     setShowEasterEgg(false) // Escape anyways
 
@@ -54,11 +56,24 @@ const Konami: React.FunctionComponent = () => {
     ? (
       <div id="konami" className="d-flex w-100 h-100 justify-content-center align-items-center">
         <div className="h-100 w-100 embed-responsive">
-          <iframe className="w-100 h-100" src="https://www.youtube-nocookie.com/embed/mHONNcZbwDY?controls=0&autoplay=1"
+          <iframe className="w-100 h-100"
+                  src="https://www.youtube-nocookie.com/embed/mHONNcZbwDY?controls=0&autoplay=1&start=79"
                   title="YouTube video player" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen/>
-          <div className="konami-layer"/>
+          <div className="konami-layer">
+            <div className="d-flex w-100 h-100 align-items-center justify-content-center">
+              <div className="col-12 col-md-8 col-lg-6">
+                <div className="message-box">
+                  <h1>Hello! <br/>Is it me you're looking for?</h1>
+                  <p>
+                    Press any key to hide this "easter egg" or the button below
+                  </p>
+                  <button onClick={hideEasterEgg}>Return to content</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

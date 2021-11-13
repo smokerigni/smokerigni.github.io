@@ -10,5 +10,25 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    .message-box {
+      padding: 1rem;
+      color: #f9f9f9;
+      font-weight: 700;
+      background: rgba(53, 53, 53, 0.5);
+
+      button {
+        border: none;
+        outline: none;
+        transition: all .2s ease-in-out;
+        background: #a2be72;
+        color: #f9f9f9;
+        font-weight: 700;
+
+        &:hover {
+          background: darken(#a2be72, 30%);
+        }
+      }
+    }
   }
 }
