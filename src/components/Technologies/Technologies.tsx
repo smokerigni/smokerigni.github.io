@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Technologies.scss'
 
 import ReactjsSVGSrc from './assets/react.svg'
@@ -27,7 +27,6 @@ const TechBadge: React.FunctionComponent<TechBadgeProps>
 )
 
 const Technologies: React.FunctionComponent = () => {
-  const [ reason, setReason ] = useState<string>('')
 
   const techStackArr = [
     { img: ReactjsSVGSrc, label: 'Reactjs' },

@@ -40,17 +40,14 @@ const ContactCodeBlock: React.FunctionComponent = () => {
   let animationHandlerInterval: ReturnType<typeof setInterval>
 
   useEffect(() => {
-    console.log('Reason changed')
     if (reason === '') {
       setTyped('')
       let i = 0
       animationHandlerInterval = setInterval(() => {
         if (i < animatedTextOther.length) {
-          console.log('not equals, setTyped', animatedTextOther.substring(0, i + 1))
           setTyped(animatedTextOther.substring(0, i + 1))
           i++
         } else {
-          console.log('clear')
           clearInterval(animationHandlerInterval)
         }
       }, 65)
@@ -69,15 +66,15 @@ const ContactCodeBlock: React.FunctionComponent = () => {
         return (
           <React.Fragment>
             <br/>
-            {'>'} You can contact me at <a href={'https://www.linkedin.com/in/smokerigni/'}
-                                           target={'_blank'}>linkedin</a>.
+            {'>'} You can contact me at <a href="https://www.linkedin.com/in/smokerigni/"
+                                           target="_blank" rel="noreferrer">linkedin</a>.
           </React.Fragment>
         )
       case contactReasons.FREELANCE:
         return (
           <React.Fragment>
             <br/>
-            {'>'} Send me a message via <a href={'mailto:smokerigni@gmail.com'}>email</a>!
+            {'>'} Send me a message via <a href="mailto:smokerigni@gmail.com">email</a>!
           </React.Fragment>
         )
       case contactReasons.HELLO:

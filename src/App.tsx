@@ -69,11 +69,11 @@ const App: React.FunctionComponent = () => {
                 </div>
                 <div className="col d-flex align-items-center my-3">
                   <i className="bi bi-linkedin"/>
-                  <a href="https://www.linkedin.com/in/smokerigni/" target="_blank">Linkedin</a>
+                  <a href="https://www.linkedin.com/in/smokerigni/" target="_blank" rel="noreferrer">Linkedin</a>
                 </div>
                 <div className="col d-flex align-items-center my-3">
                   <i className="bi bi-github"/>
-                  <a href="https://github.com/smokerigni" target="_blank">GitHub</a>
+                  <a href="https://github.com/smokerigni" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
               </div>
             </div>

@@ -46,12 +46,10 @@ const Konami: React.FunctionComponent = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown)
     // cleanup this component
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [ codePosition ]);
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  })
   return showEasterEgg
     ? (
       <div id="konami" className="d-flex w-100 h-100 justify-content-center align-items-center">
