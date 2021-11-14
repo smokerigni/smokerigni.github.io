@@ -5,6 +5,7 @@ import Technologies from "./components/Technologies/Technologies";
 import Konami from "./components/Konami/Konami";
 import Navigation from "./components/Navigation/Navigation";
 import About from "./components/About/About";
+import ParallaxImage from "./components/ParallaxImage/ParallaxImage";
 
 const App: React.FunctionComponent = () => {
   return (
@@ -13,7 +14,7 @@ const App: React.FunctionComponent = () => {
       <article className="content">
         <div className="container-fluid">
           <header id="hello" className="row align-items-center justify-content-center position-relative">
-            <div className="image-layer position-absolute"/>
+            <ParallaxImage/>
             <div className="position-relative col-10 col-lg-4 col-md-8">
               <div className="d-flex flex-wrap">
                 <h1 className="w-100">

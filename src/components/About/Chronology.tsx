@@ -21,7 +21,7 @@ const JobBlock: React.FunctionComponent<JobBlockProps> = (
         </ul>
       </div>}
       <div>{corporation}</div>
-      {website !== undefined && <div><a href={website} target="_blank">{website}</a></div>}
+      {website !== undefined && <div><a href={website} target="_blank" rel="noreferrer">{website}</a></div>}
     </div>
   </div>)
 
