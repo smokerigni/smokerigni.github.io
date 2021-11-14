@@ -17,16 +17,16 @@ const About: React.FunctionComponent = () => {
           <div className="about-switch row row-cols-2">
             <div className="col">
               <div
-                onClick={selectLongTab}
-                className={"tab even d-flex align-items-center justify-content-center" + (tab === 'long' ? ' active' : '')}>
-                Story
+                onClick={selectShortTab}
+                className={"tab even d-flex align-items-center justify-content-center" + (tab === 'short' ? ' active' : '')}>
+                Chronology
               </div>
             </div>
             <div className="col">
               <div
-                onClick={selectShortTab}
-                className={"tab odd d-flex align-items-center justify-content-center" + (tab === 'short' ? ' active' : '')}>
-                Chronology
+                onClick={selectLongTab}
+                className={"tab odd d-flex align-items-center justify-content-center" + (tab === 'long' ? ' active' : '')}>
+                Story
               </div>
             </div>
           </div>

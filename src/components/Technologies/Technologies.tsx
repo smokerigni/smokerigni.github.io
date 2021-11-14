@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Technologies.scss'
 
 import ReactjsSVGSrc from './assets/react.svg'
+import ReduxSVGSrc from './assets/redux.svg'
 import NodejsSVGSrc from './assets/node.svg'
 import TypescriptSVGSrc from './assets/typescript.svg'
 import JavascriptSVGSrc from './assets/javascript.svg'
@@ -27,9 +28,10 @@ const TechBadge: React.FunctionComponent<TechBadgeProps>
 
 const Technologies: React.FunctionComponent = () => {
   const [ reason, setReason ] = useState<string>('')
-  // Reactjs, PHP, NodeJS, Javascript, CSS3, SASS, HTML5, Typescript
+
   const techStackArr = [
     { img: ReactjsSVGSrc, label: 'Reactjs' },
+    { img: ReduxSVGSrc, label: 'Redux' },
     { img: NodejsSVGSrc, label: 'NodeJS' },
     { img: TypescriptSVGSrc, label: 'Typescript' },
     { img: JavascriptSVGSrc, label: 'Javascript' },
