@@ -11,7 +11,7 @@ const App: React.FunctionComponent = () => {
   return (
     <React.Fragment>
       <Navigation/>
-      <article className="content">
+      <article className="content w-100">
         <div className="container-fluid">
           <header id="hello" className="row align-items-center justify-content-center position-relative">
             <ParallaxImage/>
